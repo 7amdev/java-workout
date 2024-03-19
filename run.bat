@@ -1,13 +1,13 @@
 @echo off
 
-set CLASSPATH=.;C:\java_programs
+set CLASSPATH=.;classes
 
 if [%1%] == [] goto error 
 
 rmdir /S /Q classes
 mkdir classes
 javac -d classes %1%.java
-java -cp classes %1%
+java -cp %CLASSPATH% %1%
 goto end
 
 :error
