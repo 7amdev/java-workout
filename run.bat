@@ -1,5 +1,7 @@
 @echo off
 
+set CLASSPATH=.;C:\java_programs
+
 if [%1%] == [] goto error 
 
 rmdir /S /Q classes
