@@ -1,5 +1,6 @@
 @echo off
 
+REM adds current directory(.) and (classes) folder to classpath
 set CLASSPATH=.;classes
 
 if [%1%] == [] goto error 
